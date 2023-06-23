@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#body{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(./ASSET/river-1589616_1280.jpg); */
+    background-image: url(./ASSET/fantasy-2925250_1280.jpg);
+background-size: cover;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.container{
+ width: 90%;
+ height: 90vh;
+ max-width: 80%;
+ /* background-image: url(./ASSET/fantasy-2925250_1280.jpg); */
+  background-image: url(./ASSET/river-1589616_1280.jpg);
+ background-size: cover;
+ opacity: 0.8;
+ margin: 0 auto;
+ justify-content: space-around;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+img{
+    float: right;
+    width: 10rem;
+}
+
+/* i run an animation. ignore */
+#container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* position: fixed; */
+position: absolute;
+    filter: contrast(20);
+    /* background-color: black; */
+    overflow: hidden;
+   
+ 
+    
+  }
+  
+  span {
+    color: goldenrod;
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    filter: blur(0.2rem);
+    display: block;
+    transition: all 1.5s ease;
+    opacity: 0;
+    filter: blur(0.6rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: right;
+    
+  }
+  span:nth-child(1) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 0s;
+   
+  }
+  span:nth-child(2) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 1s;
+    color: #00bee3;
+  }
+  span:nth-child(3) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 2s;
+    color: #f19639;
+  }
+  span:nth-child(4) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 3s;
+  }
+  span:nth-child(5) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 4s;
+    color: #ff4489;
+  }
+  span:nth-child(6) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 5s;
+    color: aliceblue;
+  }
+  span:nth-child(7) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 6s;
+    color: hotpink;
+  }
+  span:nth-child(8) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 7s;
+    color: chartreuse;
+  }
+  span:nth-child(9) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 8s;
+    color: darkturquoise;
+  }
+  span:nth-child(10) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 9s;
+    color: darkgreen;
+  }
+  span:nth-child(11) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 10s;
+    color: chartreuse;
+  }
+  
+  @keyframes letteranim {
+    0% {
+      opacity: 0;
+      filter: blur(0.6rem);
+    }
+    5% {
+      opacity: 1;
+      filter: blur(0.2rem);
+    }
+    10% {
+      opacity: 1;
+      filter: blur(0.2rem);
+    }
+    20% {
+      opacity: 0;
+      filter: blur(0.6rem);
+    }
+    100% {
+      opacity: 0;
+      filter: blur(0.6rem);
+    }
+  }
+  /* animation stops */
+
+  .first-ct{
+ line-height: 1.5;
+ color: white;
+ padding-left: 5rem;
+padding-top: 5rem;
+font-size: 1.5rem;
+}
+  button{
+    width: 5rem;
+    height: 3rem;
+    border-radius: 20px;
+    background-color: #ff4489;
+    
+  }
+
+  .second-ct{
+    display: flex;
+    gap: 0.5rem;
+    float: right;
+    margin-right: 5rem;
+    /* max-width: 5rem; */
+    /* margin-top: 1rem; */
+    /* background-color: red; */
+  }
+  .days{
+    width: 10rem;
+    height: 16rem;
+    background-color:#00bee3;
+    color: white;
+    padding-top: 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .hours{
+    width: 10rem;
+    height: 16rem;
+    background-color:green;
+    color: white;
+    padding-top: 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .minutes{
+    width: 10rem;
+    height: 16rem;
+    background-color: #ff4489;
+    color: white;
+    padding-top: 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .seconds{
+    width: 11rem;
+    height: 16rem;
+    background-color: #f19639;
+    color: white;
+    padding-top: 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* popup section */
+
+.popup{
+  margin-top: 5rem;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./ASSET/fantasy-2925250_1280.jpg);
+  background-size: cover;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+ /* display: none; */
+}
+/* #time{
+  float: left;
+} */
+#ct-popup{
+ 
+  width: 90%;
+  height: 90vh;
+  /* background-image: url(./ASSET/stopwatch-60204_1280.jpg); */
+  border-radius: 5px 0px 0px 10px;
+  padding-top: 10rem;
+  background-size: cover;
+
+  
+}
+  h1 {
+    margin-bottom: 20px;
+    font-family: 'Kablammo', cursive;
+   /* color: #f19639; */
+    /* background-color: #f19639; */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+   
+font-family: 'Poppins', sans-serif;
+  }
+  
+  input[type="number"] {
+ width: 10rem;
+ height: 1.9rem;
+ border-radius: 5px;
+ outline-style: double;
+ outline-color: honeydew;
+ 
+  }
+  
+  button {
+    margin-top: 10px;
+    width: 9rem;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow:5px 5px green;
+  }
+  
+  #countdown {
+    margin-top: 20px;
+    font-size: 24px;
+  }
